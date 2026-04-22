@@ -30,10 +30,6 @@ Performed exploratory data analysis on tipping behavior using factors like time,
 Developed a structured view of employee distribution across departments and roles. Identified gaps in workforce allocation and reporting hierarchy.
 
 
-
-## 🌐 Live Website
-https://tanushreemaz.github.io
-
 ## 📄 Resume
 [Download Resume](assets/Tanushree_Mazumdar_Data_Analyst_Resume.pdf)
 
