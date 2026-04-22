@@ -1,4 +1,5 @@
-# Tanushree Mazumdar – Portfolio
+## 🚀 Live Portfolio
+https://tanushreemaz.github.io
 
 Welcome to my personal portfolio website showcasing my work in Data Analysis, SQL, and Dashboarding.
 
@@ -12,6 +13,10 @@ Aspiring Data Analyst with hands-on experience in:
 
 ## 📊 Projects
 
+
+### 🔹 SaaS Revenue & Churn Analysis
+Built a dynamic dashboard to track MRR, churn rate, and customer segments. Identified high-risk customers and revenue trends to support retention strategies.
+
 ### 🔹 Superstore – End-to-End Analysis
 Analyzed sales, profit, and customer trends to identify key growth opportunities and loss-making segments. Built interactive dashboards to track KPIs and regional performance.
 
@@ -24,8 +29,6 @@ Performed exploratory data analysis on tipping behavior using factors like time,
 ### 🔹 Employee Mapping
 Developed a structured view of employee distribution across departments and roles. Identified gaps in workforce allocation and reporting hierarchy.
 
-### 🔹 SaaS Revenue & Churn Analysis
-Built a dynamic dashboard to track MRR, churn rate, and customer segments. Identified high-risk customers and revenue trends to support retention strategies.
 
 
 ## 🌐 Live Website
