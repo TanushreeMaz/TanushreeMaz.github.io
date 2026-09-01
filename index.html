@@ -811,11 +811,50 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright" style="font-size: 0.6rem; opacity: 0.8;">&copy; Tanushree Mazumdar | The Data Lab</p>
-					</footer>
+					<div class="portfolio-stats" id="portfolio-stats">
+						<span class="stat-item">
+							<span class="stat-icon">👁</span>
+							<span id="view-count">...</span> Views
+						</span>
+						<span class="stat-divider">|</span>
+						<span class="stat-item">
+							<span class="stat-icon">🕐</span>
+							Last visited: <span id="last-visited">...</span>
+						</span>
+					</div>
 
-			</div>
+				<script>
+					// Count views
+					fetch('https://api.countapi.xyz/hit/tanushreemaz-portfolio/visits')
+						.then(response => response.json())
+						.then(data => {
+						document.getElementById('view-count').textContent = data.value;
+						})
+						.catch(() => {
+						document.getElementById('view-count').textContent = '—';
+						});
+
+					// Last visited — stores in localStorage
+					const now = new Date();
+					const last = localStorage.getItem('lastVisit');
+					
+					if (last) {
+						const diff = Math.floor((now - new Date(last)) / 60000);
+						if (diff < 1) {
+						document.getElementById('last-visited').textContent = 'just now';
+						} else if (diff < 60) {
+						document.getElementById('last-visited').textContent = diff + ' mins ago';
+						} else if (diff < 1440) {
+						document.getElementById('last-visited').textContent = Math.floor(diff/60) + ' hrs ago';
+						} else {
+						document.getElementById('last-visited').textContent = Math.floor(diff/1440) + ' days ago';
+						}
+					} else {
+						document.getElementById('last-visited').textContent = 'first visit';
+					}
+					
+					localStorage.setItem('lastVisit', now.toISOString());
+					</script>	
 
 		<!-- BG -->
 			<div id="bg"></div>
